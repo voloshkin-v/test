@@ -1,0 +1,44 @@
+.main-header {
+	height: 100px;
+	background-color: #000000;
+
+	&__container {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 100%;
+	}
+
+	&__logo {
+		display: block;
+		width: 50px;
+		img {
+			display: block;
+			width: 100%;
+		}
+	}
+
+	.menu {
+		display: flex;
+		align-items: center;
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+
+		&-item {
+			margin-right: 25px;
+
+			&.current-menu-item {
+				a {
+					text-decoration: underline;
+				}
+			}
+		}
+
+		a {
+			color: #ffffff;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
+}
