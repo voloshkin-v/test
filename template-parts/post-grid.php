@@ -11,12 +11,14 @@
 
 	<a href="<?php the_permalink(); ?>" class="post-item__title"><?php the_title(); ?></a>
 
-	<div class="post-item__descr">
+	<div class="post-item__description">
 		<?php
 			if ( has_excerpt() ) {
-				echo wp_trim_words( get_the_excerpt(), 25, _e( '...', 'test' ) );
+				echo wp_trim_words( get_the_excerpt(), 25 );
+			} else if ( !empty (get_the_content()) ) {
+				echo wp_trim_words( get_the_content(), 25 );
 			} else {
-				_e( 'No Excerpt', 'test' );
+				echo _e( 'No excerpt and no content...', 'test' );
 			}
 		?>
 	</div>

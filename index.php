@@ -4,6 +4,11 @@
 	global $wp_query;
 ?>
 
+<?php
+	$name = apply_filters( 'my_filter', 'Владимир' );
+
+	echo $name;
+?>
 
 <section class='posts' id="post-0">
 	<div class="container">
@@ -35,7 +40,7 @@
 						the_post();
 						?>
 							<?php
-							get_template_part('template-parts/post-grid');
+								get_template_part('template-parts/post-grid');
 							 ?>
 						<?
 					}?>

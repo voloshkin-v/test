@@ -146,4 +146,13 @@
 
 		wp_die();
 	}
+
+	// test
+
+	function my_filter_function( $str ){
+		return 'Здравствуйте '. $str;
+	}
+
+	// Прикрепим коллбэк к фильтру.
+	add_filter( 'my_filter', 'my_filter_function' );
 ?>

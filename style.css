@@ -271,7 +271,7 @@ footer {
 .posts .post-item__title:hover {
   text-decoration: underline;
 }
-.posts .post-item__descr {
+.posts .post-item__description {
   margin-top: 15px;
   color: #000000;
 }
@@ -421,7 +421,7 @@ footer {
   color: #000000;
   text-align: center;
 }
-.tax-section .single-item__descr {
+.tax-section .single-item__description {
   color: #000000;
   margin-top: 10px;
   text-align: center;
